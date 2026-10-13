@@ -1,62 +1,55 @@
-### Updated by XGC
-This repository is essentially an exact mirror of the official source Atmosphere repository. 
-> * Added Custom Workflow files to ``/.github/``
-======
-# The latest release can be found [here](https://github.com/Xieons-Gaming-Corner/Atmosphere1.9.2_SwitchFWSupport_20.2.0/releases/tag/Atmosphere1.9.2_SwitchFWS_20.2.0) 
-- This is a mirror of the official release that includes the latest ``fusee.bin`` as well as the atmosphere directory for the root you SD card. I've additionally included a ZIP of the TegraRCM GUI to inject Fusee.bin into Atmosphere
+# XGC SWITCH BUNDLE:
 
-XGC Special Thanks to: 
-https://github.com/Manu098vm @Manu098VM or helpig resolve an issue with this version not being able to work. <img width="616" height="168" alt="image" src="https://github.com/user-attachments/assets/502b8dd4-9db6-4a26-b550-a5799e1b8174" />
-.
-=====
-=====
-![Banner](img/banner.png?raw=true)
-=====
 
-![License](https://img.shields.io/badge/License-GPLv2-blue.svg)
-[![Chat on Discord](https://img.shields.io/badge/Discord-5865f2?logo=discord&logoColor=white)](https://discordapp.com/invite/ZdqEhed)
-![Made with Notepad++](img/np++.png?raw=true)
+
+# Atmosphère
 
 Atmosphère is a work-in-progress customized firmware for the Nintendo Switch.
 
-Components
-=====
+The upstream Atmosphère project is developed independently by its maintainers and contributors. For official source code, documentation, support, compatibility information, and releases, visit:
 
-Atmosphère consists of multiple components, each of which replaces/modifies a different component of the system:
+- [Atmosphère GitHub repository](https://github.com/Atmosphere-NX/Atmosphere)
+- [Atmosphère releases](https://github.com/Atmosphere-NX/Atmosphere/releases)
 
-* Fusée: First-stage Loader, responsible for loading and validating stage 2 (custom TrustZone) plus package2 (Kernel/FIRM sysmodules), and patching them as needed. This replaces all functionality normally in Package1loader/NX Bootloader.
-* Exosphère: Customized TrustZone, to run a customized Secure Monitor
-* Thermosphère: EL2 EmuNAND support, i.e., backing up and using virtualized/redirected NAND images
-* Stratosphère: Custom Sysmodule(s), both Rosalina style to extend the kernel/provide new features, and of the loader reimplementation style to hook important system actions
-* Troposphère: Application-level Horizon OS patches, used to implement desirable CFW features
+## Components
 
-Licensing
-=====
+Atmosphère consists of multiple components, each of which replaces or modifies a different component of the system:
 
-This software is licensed under the terms of the GPLv2, with exemptions for specific projects noted below.
+- **Fusée:** First-stage loader responsible for loading and validating stage 2, customized TrustZone, package2, kernel/FIRM sysmodules, and required patches. This replaces functionality normally handled by Package1loader/NX Bootloader.
+- **Exosphère:** Customized TrustZone component used to run a customized Secure Monitor.
+- **Thermosphère:** EL2 EmuNAND support, including backing up and using virtualized or redirected NAND images.
+- **Stratosphère:** Custom sysmodules used to extend the kernel, provide features, and hook important system actions.
+- **Troposphère:** Application-level Horizon OS patches used to implement custom firmware features.
 
-You can find a copy of the license in the [LICENSE file](LICENSE).
+## Licensing
 
-Exemptions:
-* [Nintendo](https://github.com/Nintendo) is exempt from GPLv2 licensing and may (at its option) instead license any source code authored for the Atmosphère project under the Zero-Clause BSD license.
+Atmosphère is licensed under the terms of the GPLv2, subject to project-specific exemptions.
 
-Credits
-=====
+A copy of the license is available in the [LICENSE](LICENSE) file.
 
-Atmosphère is currently being developed and maintained by __SciresM__, __TuxSH__, __hexkyz__, and __fincs__.<br>
-In no particular order, we credit the following for their invaluable contributions:
+### Exemption
 
-* __switchbrew__ for the [libnx](https://github.com/switchbrew/libnx) project and the extensive [documentation, research and tool development](http://switchbrew.org) pertaining to the Nintendo Switch.
-* __devkitPro__ for the [devkitA64](https://devkitpro.org/) toolchain and libnx support.
-* __ReSwitched Team__ for additional [documentation, research and tool development](https://reswitched.github.io/) pertaining to the Nintendo Switch.
-* __ChaN__ for the [FatFs](http://elm-chan.org/fsw/ff/00index_e.html) module.
-* __Marcus Geelnard__ for the [bcl-1.2.0](https://sourceforge.net/projects/bcl/files/bcl/bcl-1.2.0) library.
-* __naehrwert__ and __st4rk__ for the original [hekate](https://github.com/nwert/hekate) project and its hwinit code base.
-* __CTCaer__ for the continued [hekate](https://github.com/CTCaer/hekate) project's fork and the [minerva_tc](https://github.com/CTCaer/minerva_tc) project.
-* __m4xw__ for development of the [emuMMC](https://github.com/m4xw/emummc) project.
-* __Riley__ for suggesting "Atmosphere" as a Horizon OS reimplementation+customization project name.
-* __hedgeberg__ for research and hardware testing.
-* __lioncash__ for code cleanup and general improvements.
-* __jaames__ for designing and providing Atmosphère's graphical resources.
-* Everyone who submitted entries for Atmosphère's [splash design contest](https://github.com/Atmosphere-NX/Atmosphere-splashes).
-* _All those who actively contribute to the Atmosphère repository._
+- [Nintendo](https://github.com/Nintendo) is exempt from GPLv2 licensing and may, at its option, license source code authored for the Atmosphère project under the Zero-Clause BSD license.
+
+## Credits
+
+Atmosphère is developed and maintained by **SciresM**, **TuxSH**, **hexkyz**, and **fincs**.
+
+In no particular order, credit is also given to:
+
+- **switchbrew** for the [libnx](https://github.com/switchbrew/libnx) project and extensive [Nintendo Switch documentation, research, and tool development](http://switchbrew.org).
+- **devkitPro** for the [devkitA64](https://devkitpro.org/) toolchain and libnx support.
+- **ReSwitched Team** for additional [documentation, research, and tool development](https://reswitched.github.io/) related to Nintendo Switch development.
+- **ChaN** for the [FatFs](http://elm-chan.org/fsw/ff/00index_e.html) module.
+- **Marcus Geelnard** for the [bcl-1.2.0](https://sourceforge.net/projects/bcl/files/bcl/bcl-1.2.0) library.
+- **naehrwert** and **st4rk** for the original [hekate](https://github.com/nwert/hekate) project and its hardware-initialization codebase.
+- **CTCaer** for the continued [hekate](https://github.com/CTCaer/hekate) fork and the [minerva_tc](https://github.com/CTCaer/minerva_tc) project.
+- **m4xw** for development of the [emuMMC](https://github.com/m4xw/emummc) project.
+- **Riley** for suggesting “Atmosphere” as the Horizon OS reimplementation and customization project name.
+- **hedgeberg** for research and hardware testing.
+- **lioncash** for code cleanup and general improvements.
+- **jaames** for designing and providing Atmosphère graphical resources.
+- Everyone who submitted entries for the Atmosphère [splash design contest](https://github.com/Atmosphere-NX/Atmosphere-splashes).
+- All contributors to the [Atmosphère repository](https://github.com/Atmosphere-NX/Atmosphere).
+
+---
