@@ -25,7 +25,7 @@ Atmosphère consists of multiple components, each of which replaces or modifies 
 
 Atmosphère is licensed under the terms of the GPLv2, subject to project-specific exemptions.
 
-A copy of the license is available in the [LICENSE](LICENSE) file.
+A copy of the license is available in the [LICENSE](https://github.com/Atmosphere-NX/Atmosphere/blob/master/LICENSE) file.
 
 ### Exemption
 
